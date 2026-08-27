@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 1 - WebGL</title>
+        <style>
+            body {
+                margin: 0;
+                background: #111;
+            }
+
+            .mural {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+                gap: 20px;
+                padding: 20px;
+                justify-items: center;
+            }
+
+            .title {
+                text-align: center;
+                color: #fff;
+                font-family: Arial, sans-serif;
+            }
+
+            .subtitle {
+                text-align: center;
+                color: #fff;
+                font-family: Arial, sans-serif;
+            }
+
+            canvas {
+                background: #000;
+                border: 2px solid #444;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="title">Atividade 1 - WebGL</h1>
+        <div class="mural">
+            <div>
+                <h3 class="subtitle">Carro</h3>
+                <canvas id="canvas1" width="400" height="400"></canvas>
+            </div>
+            
+            <div>
+                <h3 class="subtitle">Flor</h3>
+            <canvas id="canvas2" width="400" height="400"></canvas>
+            </div>
+            
+            <div>
+                <h3 class="subtitle">Robô</h3>
+                <canvas id="canvas3" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+        <script type = "module" src="carro.js"></script>
+        <script type = "module" src="flor.js"></script>
+        <script type = "module" src="robo.js"></script>
+    </body>
+</html>
