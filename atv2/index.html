@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 2 - Conversão Matricial</title>
+        <style>
+            body {
+                margin: 0;
+                background: #111;
+                font-family: Arial, sans-serif;
+                color: #fff;
+            }
+    
+            .mural {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 20px;
+                justify-items: center;
+            }
+    
+            .title { text-align: center; }
+            .subtitle { text-align: center; margin-bottom: 4px; }
+            .instrucoes { font-size: 12px; color: #aaa; max-width: 320px; text-align: center; margin-bottom: 8px; }
+    
+            canvas {
+                background: #fff;
+                border: 2px solid #444;
+                cursor: crosshair;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="title">Atividade 2 - Conversão Matricial</h1>
+        <div class="mural">
+             <div>
+                <h3 class="subtitle">Exercício 1</h3>
+                <p class="instrucoes">Clique 2 pontos para traçar a reta. Teclas 0-9 mudam a cor.</p>
+                <canvas id="canvas1" width="400" height="400"></canvas>
+            </div>
+            
+             <div>
+                <h3 class="subtitle">Exercício 2</h3>
+                <p class="instrucoes">Tecla 'r' = modo reta (2 cliques). Tecla 't' = modo triângulo (3 cliques). Teclas 0-9 mudam a cor.</p>
+                <canvas id="canvas2" width="400" height="400"></canvas>
+            </div>
+        </div>
+
+        <script src="bresenham_basic.js"></script>
+        <script src="ex1.js"></script>
+        <script src="ex2.js"></script>
+    </body>
+</html>

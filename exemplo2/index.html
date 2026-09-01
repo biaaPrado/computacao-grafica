@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bresenham - Linha por clique</title>
+        <style>
+            body { 
+                margin: 0; 
+                background: #222; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh; 
+                flex-direction: column; 
+            }
+            canvas { 
+                background: #fff; 
+                border: 2px 
+                solid #555; 
+                cursor: crosshair; 
+            }
+            p { 
+                color: #ccc; 
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Clique em dois pontos do canvas para traçar a linha (Bresenham). Teclas 0-9 mudam a cor.</p>
+        <canvas id="canvas" width="600" height="600"></canvas>
+
+        <script src="bresenham.js"></script>
+    </body>
+</html>
