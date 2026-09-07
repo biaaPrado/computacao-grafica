@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 3 - Pong</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>PONG</h1>
+
+            <div class="placar">
+                <div class="jogador">
+                    <span class="nome-jogador">Jogador 1</span>
+                    <span id="pontosJogador1" class="pontos"> 0 </span>
+                </div>
+
+                <div class="jogador">
+                    <span class="nome-jogador">Jogador 2</span>
+                    <span id="pontosJogador2" class="pontos"> 0 </span>
+                </div>
+            </div>
+
+            <div id="mensagemVencedor" class="mensagem-vencedor"></div>
+
+            <div class="instrucoes">
+                <div>
+                    <strong>Jogador 1</strong>
+                    <p>W - subir</p>
+                    <p>S - descer</p>
+                </div>
+
+                <div>
+                    <strong>Jogador 2</strong>
+                    <p>↑ - subir</p>
+                    <p>↓ - descer</p>
+                </div>
+            </div>
+
+            <canvas id="canvas" width="400" height="400"></canvas>
+
+            <button id="botaoReiniciar"> Reiniciar jogo </button>
+        </div>
+
+        <script src="m3.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
